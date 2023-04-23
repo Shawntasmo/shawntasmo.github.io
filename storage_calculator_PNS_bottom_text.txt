@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title>Storage Calculator</title>
+  <style>
+	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    body {
+      background-color: #f2f2f2; /* Set background color to grey */ 
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label for="volume">Cargo volume (cubic meters):</label>
+    <input type="number" id="volume" name="volume"><br>
+
+    <label for="days">Number of days in storage:</label>
+    <input type="number" id="days" name="days"><br>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  <script>
+  function calculateCharges() {
+    var volume = document.getElementById("volume").value;
+    var days = document.getElementById("days").value;
+
+    var storageCharges = volume * days * 20;
+    var penaltyFee = storageCharges * 0.25;
+    var removalFee = volume * 35;
+    var totalCharges = storageCharges + penaltyFee + removalFee;
+
+    alert("Storage charges: $" + storageCharges.toFixed(2) +
+          "\nPenalty fee: $" + penaltyFee.toFixed(2) +
+          "\nRemoval fee: $" + removalFee.toFixed(2) +
+          "\nTotal charges: $" + totalCharges.toFixed(2));
+  }
+
+  document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    calculateCharges();
+  });
+</script>
+		                                            </div>
+							</div>
+							
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+				<!-- Penanshin News/Promo End --></div>
+
+		</section><!-- #content end -->
+
+				<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+				<center><div class="row">
+					<div class="col-sm-6">
+					<a target="_blank" href="https://www.facebook.com/penanshin.shipping" class="social-icon si-borderless si-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook" aria-describedby="tooltip304897">
+							<i class="icon-facebook"></i>
+							<i class="icon-facebook"></i>
+						</a>
+					<a target="_blank" href="https://www.linkedin.com/in/penanshin-shipping-034a7b103" class="social-icon si-borderless si-linkedin" data-toggle="tooltip" data-placement="top" title="" data-original-title="LinkedIn" aria-describedby="tooltip588693">
+							<i class="icon-linkedin"></i>
+							<i class="icon-linkedin"></i>
+					</a>
+					<a target="_blank" href="https://twitter.com/penanshinsg" class="social-icon si-borderless si-twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter" aria-describedby="tooltip427808">
+							<i class="icon-twitter"></i>
+							<i class="icon-twitter"></i>
+					</a>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+					<center>
+					<span style="color:white;font-size:18px;">Member of:&nbsp;&nbsp;&nbsp;</span>
+					</center>
+					<div class="col-xs-12">
+					<a href="http://sla.org.sg/" target="_blank">
+					<img src="http://penanshin.com/img/singapore_logistic_associations.png" style="width:120px;height:60px;">
+					</a>
+						&nbsp;
+					<a href="http://www.cargoworldnetwork.com/" target="_blank">
+					<img src="http://penanshin.com/img/cargo_world_network.png" style="width:120px;height:60px;">
+					</a>
+					</div>
+					</p>
+					</div>
+
+					</div>
+				</center>
+					<!--Copyrights content starts here -->
+					<p style="float:left;">
+					&#169; 2019 ALL RIGHT RESERVED. DEVELOPED BY <a href="http://www.penanshin.com" target="_blank" style="color:yellow;">Penanshin Shipping Pte Ltd</a>
+					</p>
+
+</body>
+</html>
