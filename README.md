@@ -1,2 +1,0 @@
-# shawntasmo.github.io
-asdsadawda
